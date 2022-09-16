@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>calculator project</title>
+    <style>
+        .calculator{
+            width: 300px;
+            height: 460px;
+            background-color:#2952a3;
+            padding:20px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 4px 3px black;
+          position: relative;
+          left:200px;
+        }
+        .row{
+            display: flex;
+            direction: row;
+            justify-content: space-between;
+            
+
+        }
+        .btn{
+            height: 60px;
+            width: 70px;
+            font-size: 40px;
+            font-weight: bold;
+            background-color: white;
+            border-radius:8px;
+            border: 2px solid black;
+            margin-bottom: 5px;
+        }
+        .btn:hover{
+            cursor: pointer;
+            box-shadow: 0px 2px 5px white;
+        }
+        .bg-orangered {
+            background-color:orangered ;
+            color:white;
+        }
+        .bg-white{
+            background-color: white;
+            color: black;
+        }
+        .bg-gray{
+            background-color:gainsboro;
+            color:black;
+        }
+        .input-screen{
+            width: 100%;
+            height: 70px;
+            margin-bottom:20px;
+            font-size:50px;
+            font-family:monospace;
+            background-color:green ;
+        }
+        .brand{
+            font-size: 40px;
+            font-family: monospace;
+            color:white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div  class="calculator">
+        <span class="brand">RTC</span>
+        <input type="text" id="input"class="input-screen"/>
+
+        <div class="row">
+    <button class="btn bg-white">%</button>
+    <button class="btn bg-white">√</button>
+    <button class="btn bg-orangered">CE</button>
+    <button class="btn bg-orangered">C</button>
+   </div>
+
+   <div class="row">
+    <button class="btn bg-gray">7</button>
+    <button class="btn bg-gray">8</button>
+    <button class="btn bg-gray">9</button>
+    <button class="btn bg-white">-</button>
+   </div>
+
+   <div class="row">
+    <button class="btn bg-gray">4</button>
+    <button class="btn bg-gray">5</button>
+    <button class="btn bg-gray">6</button>
+    <button class="btn bg-white">÷</button>
+   </div>
+
+   <div class="row">
+    <button class="btn bg-gray">1</button>
+    <button class="btn bg-gray">2</button>
+    <button class="btn bg-gray">3</button>
+    <button class="btn bg-white">x</button>
+   </div>
+
+   <div class="row">
+    <button class="btn bg-gray">0</button>
+    <button class="btn bg-gray">.</button>
+    <button class="btn bg-white">=</button>
+    <button class="btn bg-white">+</button>
+   </div>
+
+       
+  
+
+</div>
+</body>
+</html>
